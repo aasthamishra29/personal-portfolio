@@ -6,61 +6,136 @@ box-sizing:border-box;
 
 body{
 font-family:'Poppins',sans-serif;
-background:#faf7f2;
-color:#2f2f2f;
+background:linear-gradient(to bottom,#FFF9F5,#FAF7F2,#F6F0FF);
+color:#4d4d4d;
+line-height:1.8;
+overflow-x:hidden;
+}
+
+.sparkle{
+position:fixed;
+font-size:2rem;
+opacity:0.25;
+pointer-events:none;
+}
+
+.sparkle1{
+top:80px;
+left:60px;
+}
+
+.sparkle2{
+top:250px;
+right:80px;
+}
+
+.sparkle3{
+bottom:150px;
+left:100px;
 }
 
 .hero{
 min-height:100vh;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
+text-align:center;
 padding:40px;
 }
 
-.hero-content{
-max-width:650px;
-text-align:center;
-}
-
 .hero img{
-width:220px;
-height:220px;
+width:240px;
+height:240px;
 border-radius:50%;
 object-fit:cover;
-margin-bottom:30px;
+border:8px solid #F5D6DB;
 box-shadow:0 15px 35px rgba(0,0,0,0.15);
+margin-bottom:25px;
 }
 
 h1{
 font-family:'Playfair Display',serif;
-font-size:4rem;
+font-size:4.5rem;
+color:#D48C9A;
 margin-bottom:10px;
 }
 
-.tagline{
-letter-spacing:2px;
-text-transform:uppercase;
-font-size:0.9rem;
-margin-bottom:20px;
-color:#7c6b58;
+.subtitle{
+max-width:800px;
+color:#738273;
+margin-bottom:25px;
 }
 
 .intro{
-line-height:1.8;
-margin-bottom:30px;
+max-width:700px;
 }
 
-a{
-text-decoration:none;
-background:#2f2f2f;
-color:white;
-padding:12px 28px;
-border-radius:30px;
+.buttons{
+margin-top:30px;
+}
+
+.buttons a{
 display:inline-block;
+padding:12px 25px;
+margin:10px;
+background:#D48C9A;
+color:white;
+text-decoration:none;
+border-radius:30px;
 transition:0.3s;
 }
 
-a:hover{
-transform:translateY(-3px);
+.buttons a:hover{
+transform:translateY(-4px);
+}
+
+.section{
+padding:80px 12%;
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:2.6rem;
+color:#8F7BBF;
+margin-bottom:25px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:24px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.skills span{
+background:white;
+padding:10px 18px;
+border-radius:30px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+footer{
+padding:70px;
+text-align:center;
+font-family:'Cormorant Garamond',serif;
+font-size:1.8rem;
+color:#7d7d7d;
 }
